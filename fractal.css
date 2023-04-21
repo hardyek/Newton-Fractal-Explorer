@@ -1,0 +1,170 @@
+html, body, div, canvas {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #zoomIn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #zoomOut {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #moveUp {
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #moveLeft {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #moveDown {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #moveRight {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #detail {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+
+  #resolution {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    font-size: 16px;
+  }
+
+  #qualUp {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    font-size: 16px;
+  }
+
+  #qualDown {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+  
+  #mode1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+  }
+
+  #mode2 {
+    position: absolute;
+    bottom: 20px;
+    left: 68px;
+    font-size: 16px;
+  }
+
+  #mode3 {
+    position: absolute;
+    bottom: 20px;
+    left: 116px;
+    font-size: 16px;
+  }
+
+  #mode4 {
+    position: absolute;
+    bottom: 20px;
+    left: 164px;
+    font-size: 16px;
+  }
+
+  #mode5 {
+    position: absolute;
+    bottom: 20px;
+    left: 212px;
+    font-size: 16px;
+  }
+
+
+  button {
+    border: 2px solid #000; /* add a black border */
+    padding: none; /* add padding to the button */
+    border-radius: 5px; /* add rounded corners to the button */
+    background: none;
+  }
+
+  button.active {
+    background-color: #d6f3b7;
+  }
+
+button img {
+    width: 24px; /* set the width of the SVG icon to 24 pixels */
+    height: 24px; /* set the height of the SVG icon to 24 pixels */
+    vertical-align: middle; /* align the SVG icon vertically in the button */
+}
+
+#modeText {
+    position: absolute;
+    bottom: 32px;
+    left: 77px;
+    font-size: 20px;
+}
+
+.info-screen {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.info-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "fractal.css">
+  <title>Newton's Fractal (z³ + 1 = 0)</title>
+</head>
+<body>
+  <div id="infoScreen" class="info-screen">
+    <div class="info-content">
+      <h2>Newton's Fractal Explorer</h2>
+      <p>Explore the Newton's Fractal for the polynomial z³ + 1 = 0</p>
+      <p>Move around the fractal using the controls in the top left.</p>
+      <p>Control the quality of the fractal with the 1-5 scale in the bottom left.</p>
+      <p><b>Whilst moving use a lower quality</b> to make it faster to render.</p>
+      <p>Then when you get to a position you want to see in full detail improve the quality. </p>
+      <p><b>Rendering in quality 4 or 5 will take a few seconds</b> please be patient.</p>
+      <button id="closeInfoScreen">Close</button>
+    </div>
+  </div>
+  
+  <canvas id="fractalCanvas" width="100" height="100"></canvas>
+  <script src="fractal z3 + 1.js"></script>
+
+  <button id='zoomIn' onclick="zoomIn()">
+    <img src="magnifying-glass-plus-solid.svg">
+  </button>
+  <button id='zoomOut' onclick="zoomOut()">
+    <img src="magnifying-glass-minus-solid.svg">
+  </button>
+  
+  <button id='moveUp' onclick="moveFractal(0, 1)">
+    <img src='arrow-up-solid.svg' alt='Up'>
+  </button>
+  <button id='moveLeft' onclick="moveFractal(1, 0)">
+    <img src='arrow-left-solid.svg' alt='Left'>
+  </button>
+  <button id='moveDown' onclick="moveFractal(0, -1)">
+    <img src='arrow-down-solid.svg' alt='Down'>
+  </button>
+  <button id='moveRight' onclick="moveFractal(-1, 0)">
+    <img src='arrow-right-solid.svg' alt='Right'>
+  </button>
+
+  <p id="modeText">
+    Render Detail ->
+  </p>
+
+  <button id="mode1" class="modeButton" onclick="setMode(1)">
+    <img src="1-solid.svg">
+  </button>
+  <button id="mode2" class="modeButton" onclick="setMode(2)">
+    <img src="2-solid.svg">
+  </button>
+  <button id="mode3" class="modeButton" onclick="setMode(3)">
+    <img src="3-solid.svg">
+  </button>
+  <button id="mode4" class="modeButton" onclick="setMode(4)">
+    <img src="4-solid.svg">
+  </button>
+  <button id="mode5" class="modeButton" onclick="setMode(5)">
+    <img src="5-solid.svg">
+  </button>
+</body>
+</html>
