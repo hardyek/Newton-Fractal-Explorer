@@ -281,3 +281,16 @@ document.addEventListener('touchstart', (event) => {
 
   lastTouchTime = currentTime;
 });
+
+document.querySelectorAll('.no-zoom').forEach((button) => {
+  button.addEventListener('touchstart', (event) => {
+    const currentTime = new Date().getTime();
+    const timeDifference = currentTime - lastTouchTime;
+
+    if (timeDifference < 300 && timeDifference > 0) {
+      event.preventDefault();
+    }
+
+    lastTouchTime = currentTime;
+  });
+});
