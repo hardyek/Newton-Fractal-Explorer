@@ -269,9 +269,15 @@ document.getElementById('closeInfoScreen').addEventListener('click', function() 
   document.getElementById('infoScreen').style.display = 'none';
 });
 
+let lastTouchTime = 0;
 
+document.addEventListener('touchstart', (event) => {
+  const currentTime = new Date().getTime();
+  const timeDifference = currentTime - lastTouchTime;
 
+  if (timeDifference < 300 && timeDifference > 0) {
+    event.preventDefault();
+  }
 
-
-
-     
+  lastTouchTime = currentTime;
+});
