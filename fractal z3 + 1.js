@@ -283,14 +283,15 @@ document.addEventListener('touchstart', (event) => {
 });
 
 document.querySelectorAll('.no-zoom').forEach((button) => {
-  button.addEventListener('touchstart', (event) => {
+  button.addEventListener('touchend', (event) => {
     const currentTime = new Date().getTime();
+    const lastTouchTime = parseFloat(button.dataset.lastTouchTime) || 0;
     const timeDifference = currentTime - lastTouchTime;
 
     if (timeDifference < 300 && timeDifference > 0) {
       event.preventDefault();
     }
 
-    lastTouchTime = currentTime;
+    button.dataset.lastTouchTime = currentTime;
   });
 });
