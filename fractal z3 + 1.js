@@ -275,7 +275,7 @@ document.addEventListener('touchstart', (event) => {
   const currentTime = new Date().getTime();
   const timeDifference = currentTime - lastTouchTime;
 
-  if (timeDifference < 300 && timeDifference > 0) {
+  if (timeDifference < 1000 && timeDifference > 0) {
     event.preventDefault();
   }
 
