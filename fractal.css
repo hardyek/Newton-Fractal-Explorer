@@ -59,20 +59,6 @@ html, body, div, canvas {
     border: none;
   }
 
-  #detail {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 16px;
-  }
-
-  #resolution {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    font-size: 16px;
-  }
-
   #qualUp {
     position: absolute;
     bottom: 60px;
@@ -97,28 +83,28 @@ html, body, div, canvas {
   #mode2 {
     position: absolute;
     bottom: 20px;
-    left: 68px;
+    left: 80px;
     font-size: 16px;
   }
 
   #mode3 {
     position: absolute;
     bottom: 20px;
-    left: 116px;
+    left: 140px;
     font-size: 16px;
   }
 
   #mode4 {
     position: absolute;
     bottom: 20px;
-    left: 164px;
+    left: 200px;
     font-size: 16px;
   }
 
   #mode5 {
     position: absolute;
     bottom: 20px;
-    left: 212px;
+    left: 260px;
     font-size: 16px;
   }
 
@@ -143,7 +129,7 @@ button img {
 #modeText {
     position: absolute;
     bottom: 32px;
-    left: 77px;
+    left: 93px;
     font-size: 20px;
 }
 
