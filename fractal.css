@@ -5,6 +5,14 @@ html, body, div, canvas {
     overflow: hidden;
   }
 
+  @media (max-width: 767px) {
+    /* Disable double-tap zoom on mobile devices */
+    div {
+      touch-action: manipulation;
+    }
+  }
+  
+
   #zoomIn {
     position: absolute;
     top: 20px;
