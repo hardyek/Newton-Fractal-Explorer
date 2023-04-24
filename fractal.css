@@ -110,6 +110,7 @@ html, body, div, canvas {
 
 
   button {
+    touch-action: manipulation;
     border: 2px solid #000; /* add a black border */
     padding: none; /* add padding to the button */
     border-radius: 5px; /* add rounded corners to the button */
